@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MyGames</title>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/png" href="website_logo.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <header id="header">
+        <nav class="nav-bar">
+            <span class="nav-open" onclick="navOpen">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+                <span class="logo navLogo"><img src="website_logo.png" alt="Website Logo" height="80px" width="130px"></span>
+            <div class="nav-menu">
+                <h1>MyGames</h1>
+                <span class="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house" id="nav-icons"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-info" id="nav-icons"></i> About</a></li>
+                <li><a href="#contacts"><i class="fa-solid fa-envelope" id="nav-icons"></i> Contacts</a></li>
+                <li><a href="games.html"><i class="fa-solid fa-gamepad" id="nav-icons"></i> Games</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user" id="nav-icons"></i> Login</a>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="homepage">
+            <div class="hpage-text">
+                <div class="hpage-text-a">
+                    <h1>Welcome to MyGames</h1>
+                    <h3>Let's explore the world of gamers together!</h3>
+                </div>
+            </div>
+            <div class="iframe-con">
+                <div class="iframe-con-a">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KU8S1QLcwns?si=x3EYhGCG3xAbrb8z" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section id="about">
+        <div class="about-side-design"></div>
+        <h1>About</h1>
+        <div class="about-author">
+            <h2>Creator of this Website</h2>
+            <div class="about-author-a">
+                <div class="about-author-b">
+                    <div class="author-profile">
+                        <img src="me.jpg" alt="My Profile" width="130px" height="150px">
+                    </div>
+                </div>
+                <h1>Angel Bhert Pagal</h1><br>
+                <p>1st Year College<br><br>Bachelor of Science and Information System Student
+                    <br><br>Rookie Programmer<br><br>Practicing Web Design and Development</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contacts">
+        <div class="about-side-design"></div>
+        <h1>Contacts</h1>
+        <div class="getintouch-author-contacts">
+            <div class="getintouches">
+                <h2>Get In Touch</h2>
+                <div class="gintch-input">
+                    <div class="name">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" maxlength="30" id="name">
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="email">
+                    </div> 
+                    <div class="message-box">
+                        <textarea id="message" rows="10" cols="48" maxlength="500" placeholder="Message"
+                            id="message"></textarea>
+                    </div>
+                    <div class="git-s-btn">
+                        <button type="button" id="send" onclick="message()">Send</button>
+                    </div>
+                    <div class="message">
+                        <div class="success" id="success">Message Successfully Sent!</div>
+                        <div class="danger" id="danger">Fields Can't be Empty</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="author-contacts">
+                <h2>Talk To Us</h2>
+                <div class="author-contacts-a">
+                    <div>
+                        <h3>Email</h3>
+                        <p>angelbhertm@gmail.com</p>
+                    </div>
+                    <div>
+                        <h3>Phone Number</h3>
+                        <p>09673796381</p>
+                    </div>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Philippines, Mindanao, North Cotabato,<br> Singao Kidapawan City, Purok Mangosteen</p>
+                    </div >
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script defer src="index.js"></script>
+    </body>
+</html>
